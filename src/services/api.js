@@ -26,9 +26,11 @@ export function getPost(slugOrFilename, fields = []){
     fields.forEach(field => {
         if(field === 'content') post[field] = content
         if(field === 'slug') post[field] = slug
+        if(field === 'filePath') post[field] = slugOrFilename
         if(data[field]) post[field] = data[field]
 
     })
+
 
     // retornar o post filtrado
     return post
@@ -38,7 +40,9 @@ export function getPost(slugOrFilename, fields = []){
 export function getAllPosts(fields=[]) {
     const slugs = getMarkdownFiles()
 
-    const posts = slugs.map(slug => getPost(slug, fields)).sort((a,b)=> new Date(b.date) - new Date(a.date))
+    const posts = slugs.
+    map(slug => getPost(slug, fields)).
+    sort((a,b)=> new Date(b.date) - new Date(a.date))
 
     return posts
 }
