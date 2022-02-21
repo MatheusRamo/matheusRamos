@@ -19,7 +19,7 @@ const App = ({ Component, pageProps }) => {
 
   return (
     <>
-    <span className="theme-default" />
+    <span className="theme-greenie" />
     <Component {...pageProps} />
   </>
   )
