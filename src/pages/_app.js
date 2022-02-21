@@ -5,7 +5,9 @@ import 'katex/dist/katex.min.css'
 import '../styles/global.css'
 import 'prismjs/themes/prism-tomorrow.css'
 
+
 const App = ({ Component, pageProps }) => {
+
   useEffect(() => {
     renderMathInElement(document.body, {
       delimiters: [
@@ -20,9 +22,11 @@ const App = ({ Component, pageProps }) => {
   return (
     <>
     <span className="theme-greenie" />
+    
     <Component {...pageProps} />
   </>
   )
 }
 
 export default App
+

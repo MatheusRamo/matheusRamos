@@ -1,4 +1,5 @@
 ---
+fav: "Lei Dos Cossenos"
 title: "Lei dos Cossenos"
 description: "Explicação e demostração da lei dos Cossenos"
 author: Matheus Ramos

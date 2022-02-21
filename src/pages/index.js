@@ -11,7 +11,7 @@ const Index = ({ posts }) => {
     return (
         <>
             <Layout>
-                <SEO title="Matheus Ramos" description="geo" />
+                <SEO title="Matheus Ramos" description="Blog sobre os mais diferentes assuntos" />
                 <Header name="Matheus Ramos" />
                 <main className="w-full">
                     <h1 className="text-3xl lg:text-5xl text-center mb-12">
