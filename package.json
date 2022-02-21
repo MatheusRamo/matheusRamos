@@ -1,0 +1,38 @@
+{
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.2",
+    "classnames": "^2.3.1",
+    "gray-matter": "^4.0.3",
+    "katex": "^0.15.2",
+    "next": "^12.1.0",
+    "prismjs": "^1.27.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-markdown": "^8.0.0",
+    "rehype-raw": "^6.1.1"
+  },
+  "name": "blog-nextjs-markdown",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatheusRamo/Blog-Nextjs-Markdown.git"
+  },
+  "author": "Matheus Ramos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MatheusRamo/Blog-Nextjs-Markdown/issues"
+  },
+  "homepage": "https://github.com/MatheusRamo/Blog-Nextjs-Markdown#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.6",
+    "tailwindcss": "^3.0.23"
+  }
+}
