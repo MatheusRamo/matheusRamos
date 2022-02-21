@@ -12,7 +12,7 @@ export default function Page({ post }) {
         <Layout>
             <SEO title={post.title} />
             <Header name="Matheus Ramos" />
-            <article className="px-6 md:px-2 sm:pl-2">
+            <article className="px-6 md:px-2 sm:px-2">
                 <header>
                     <h1 className="text-3xl md:text-5xl dark:text-white text-center mb-12">
                         {post.title}
@@ -20,7 +20,7 @@ export default function Page({ post }) {
                     <p className="text-xl mb-4">{post.description}</p>
                 </header>
                 <main>
-                    <article className="sm:pl-2 prose dark:prose-dark">
+                    <article className="sm:px-2 prose dark:prose-dark">
                         <RenderMarkdown children={post.content} />
                     </article>
                 </main>

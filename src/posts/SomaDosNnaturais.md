@@ -8,11 +8,11 @@ date: '18/02/2022'
 
 **Lembrando do produto notável:**
 
-$$(a+b)^3=a^3+3a^2b+3ab^2+b^3\tag{1}$$
+$$(a+b)^3=a^3+3a^2b+3ab^2+b^3$$
 
 **Façamos com $a=k$ e $b=1$**
 
-$$(k+1)^3=k^3+3k^2+3k+1\tag{2}$$
+$$(k+1)^3=k^3+3k^2+3k+1$$
 
 **Dando valores para $k$**
 
@@ -53,49 +53,49 @@ $$ (n+1)^3 = \cancel{n^3} +3\cdot n^2 +3\cdot n +1$$
 
 **Para simplificar fazemos:**
 
-$$S_q=1^2+2^2+3^2+\dots+n^2\tag{3}$$
+$$S_q=1^2+2^2+3^2+\dots+n^2$$
 
 **Usando a soma dos n números naturais:**
 
-$$\frac{n\cdot(n+1)}{2} = 1+2+3+\dots+n \tag{4}$$
+$$\frac{n\cdot(n+1)}{2} = 1+2+3+\dots+n $$
 
 **Logo**
 
-$$(n+1)^3=3\cdot S_q+3\cdot\frac{n\cdot(n+1)}{2}+(n+1)\tag{5}$$
+$$(n+1)^3=3 S_q+3\frac{n(n+1)}{2}+(n+1)$$
 
 **Multiplicando por $2$ em ambos os lados:**
 
-$$2\cdot(n+1)^3=6\cdot S_q+3 n\cdot(n+1)+2\cdot(n+1)\tag{6}$$
+$$2(n+1)^3=6 S_q+3 n(n+1)+2(n+1)$$
 
-**Isolando o $6\cdot S_q$:**
+**Isolando o $6 S_q$:**
 
-$$6\cdot S_q=2\cdot(n+1)^3 - 3n\cdot(n+1)-2\cdot(n+1)\tag{7}$$
+$$6 S_q=2(n+1)^3 - 3n(n+1)-2(n+1)$$
 
 **Colocando em evidência $(n+1)$ no lado direito da equação:**
 
-$$6\cdot S_q=(n+1)\cdot \left[2\cdot(n+1)^2 - 2-3n \right]\tag{8}$$
+$$6S_q=(n+1) \left[2\cdot(n+1)^2 - 2-3n \right]$$
 
 **Lembrando do produto notável:**
 
-$$(n+1)^2=n^2+2n+1\tag{9}$$
+$$(n+1)^2=n^2+2n+1$$
 
 **Temos:**
 
-$$6\cdot S_q=(n+1)\cdot \left[2\cdot(n^2+2n+1) - 2-3n \right]\tag{10}$$
+$$6S_q=(n+1) [2(n^2+2n+1) - 2-3n] $$
 
-$$6\cdot S_q=(n+1)\cdot \left[2n^2+4n+2 - 2-3n \right]\tag{11}$$
+$$6S_q=(n+1)[2n^2+4n+2 - 2-3n]$$
 
-$$6\cdot S_q=(n+1)\cdot \left[2n^2+4n+\cancel{2} - \cancel{2}-3n \right]\tag{12}$$
+$$6S_q=(n+1)[2n^2+4n+\cancel{2} - \cancel{2}-3n]$$
 
 **Com isso temos:**
 
-$$6\cdot S_q=(n+1)\cdot \left(2n^2+4n-3n \right)\tag{13}$$
+$$6 S_q=(n+1) \left(2n^2+4n-3n \right)$$
 
-$$6\cdot S_q=(n+1)\cdot \left(2n^2+n \right)\tag{14}$$
+$$6 S_q=(n+1) \left(2n^2+n \right)$$
 
-$$6\cdot S_q=(n+1)\cdot n\cdot(2n+1) \tag{15}$$
+$$6 S_q=(n+1) n(2n+1)$$
 
 **Logo a soma dos $n$ primeiros números naturais ao quadrado:**
 
-$$S_q=\frac{n\cdot(n+1)\cdot(2n+1)}{6}\tag{16}$$
+$$S_q=\frac{n\cdot(n+1)\cdot(2n+1)}{6}$$
 
