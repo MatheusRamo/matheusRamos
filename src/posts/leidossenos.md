@@ -1,6 +1,5 @@
 ---
-fav: "Lei Dos Senos"
-title: "Lei dos Senos"
+title: "Lei Dos Senos"
 description: "Explicação e demostração da lei dos Senos"
 author: Matheus Ramos
 date: '21/02/2022'

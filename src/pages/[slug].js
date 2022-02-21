@@ -12,7 +12,7 @@ import ArrowIcon from '../components/ArrowIcon'
 export default function Page({ post }) {
     return (
         <Layout>
-            <SEO title={post.fav} description={post.description}/>
+            <SEO title={post.title} description={post.description}/>
             <Header name="Matheus Ramos" />
             <article className="px-6 md:px-2 sm:px-2">
                 <header>
@@ -122,8 +122,7 @@ export function getStaticProps({ params }) {
         'author',
         'slug',
         'content',
-        'description',
-        'fav'
+        'description'
     ])
     post.prev = prevPost
     post.next = nextPost

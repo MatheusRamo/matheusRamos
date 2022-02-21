@@ -1,6 +1,5 @@
 ---
-fav: "Lei Dos Cossenos"
-title: "Lei dos Cossenos"
+title: "Lei Dos Cossenos"
 description: "Explicação e demostração da lei dos Cossenos"
 author: Matheus Ramos
 date: '14/02/2022'
