@@ -33,10 +33,11 @@ export default function Page({ post }) {
       <Header name="Matheus Ramos" />
       <article className="px-6 md:px-2 sm:px-2">
         <div>
-          <h1 className="text-3xl md:text-5xl dark:text-white text-center mb-12">
+        <p className="text-center text-gray-600 dark:text-gray-400 text-base mb-2  pb-2"> {post.date}</p>
+          <h1 className="text-3xl border-b pb-4 md:text-5xl text-center mb-4">
             {post.title}
           </h1>
-          <p className="text-xl mb-4">{post.description}</p>
+          
         </div>
         <main>
           <article className="sm:px-2 prose dark:prose-dark">

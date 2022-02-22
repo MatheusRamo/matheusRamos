@@ -2,7 +2,7 @@
 title: "Lei Dos Cossenos"
 description: "Explicação e demostração da lei dos Cossenos"
 author: Matheus Ramos
-date: 'March 21,2022'
+date: 'March 21, 2022'
 ---
 
 
@@ -12,11 +12,7 @@ Considerando a figura 1, podemos observar 3 triângulos:
 $$ ABC,BCD,BAD$$
 <div>
     <p align="center" style="font-weight:bold;font-size:16px">Figura 1  </p>
-<<<<<<< HEAD
     <p align="center"  > 
-=======
-    <p align="center"  >
->>>>>>> 02f470d2ca81e36c4dfe3f97394430bc2f441bf9
         <img   src="radiano.svg" alt="Imagem"/>
     </p>
     <p align="center" style="font-size:16px">Fonte: O autor</p>
