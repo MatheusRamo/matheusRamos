@@ -12,12 +12,8 @@ Considerando a figura 1, podemos observar 3 triângulos:
 $$ ABC,BCD,BAD$$
 <div>
     <p align="center" style="font-weight:bold;font-size:16px">Figura 1  </p>
-    <p align="center"  > 
-<<<<<<< HEAD
-        <img   src="radiano.svg" alt="Imagem"/>
-=======
-        <img style="border-radius:10px" src="/integral.svg" alt="Imagem"/>
->>>>>>> 259f0875d518743b0e6a30e450cee18e99f574a8
+    <p align="center"  >
+        <img   src="radiano.svg" alt="Imagem"/>8
     </p>
     <p align="center" style="font-size:16px">Fonte: O autor</p>
 </div>
