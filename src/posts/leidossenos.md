@@ -2,7 +2,7 @@
 title: "Lei Dos Senos"
 description: "Explicação e demostração da lei dos Senos"
 author: Matheus Ramos
-date: 'March 21,2022'
+date: 'March 22,2022'
 ---
 
 
