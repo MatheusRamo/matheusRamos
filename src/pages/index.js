@@ -13,10 +13,7 @@ const Index = ({ posts }) => {
                 <SEO title="Matheus Ramos" description="Blog sobre os mais diferentes assuntos" />
                 <Header/>
                 <main className="w-full">
-                    <h1 className="text-3xl lg:text-5xl text-center mb-12">
-                        Geophysics
-                    </h1>
-
+                    
                     <ul className="pl-4 w-full">
                         {
                             posts.map(post =>
