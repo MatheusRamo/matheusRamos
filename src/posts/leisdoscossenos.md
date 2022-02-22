@@ -2,7 +2,7 @@
 title: "Lei Dos Cossenos"
 description: "Explicação e demostração da lei dos Cossenos"
 author: Matheus Ramos
-date: '14/02/2022'
+date: 'March 14,2022'
 ---
 
 

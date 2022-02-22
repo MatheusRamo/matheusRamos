@@ -2,7 +2,7 @@
 title: "Soma Dos N Primeiros Números Naturais ao Quadrado"
 description: "Explicação e demostração da fórmula da soma dos primeiros $n$ números naturais ao quadrado"
 author: Matheus Ramos
-date: '18/02/2022'
+date: 'March 18,2022'
 ---
 
 

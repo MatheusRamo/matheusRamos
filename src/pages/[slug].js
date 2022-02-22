@@ -93,7 +93,7 @@ export async function getStaticProps({ params }) {
     const currentPost = posts.find((post) => post.filePath === currentFileName);
     const currentPostIndex = posts.indexOf(currentPost);
 
-    const post = posts[currentPostIndex - 1];
+    const post = posts[currentPostIndex + 1];
     // no prev post found
     if (!post) return null;
 
@@ -112,7 +112,7 @@ export async function getStaticProps({ params }) {
     const currentPost = posts.find((post) => post.filePath === currentFileName);
     const currentPostIndex = posts.indexOf(currentPost);
 
-    const post = posts[currentPostIndex + 1];
+    const post = posts[currentPostIndex - 1];
     // no prev post found
     if (!post) return null;
 
@@ -141,6 +141,7 @@ export async function getStaticProps({ params }) {
   post.prev = prevPost
   post.next = nextPost
 
+
   return {
     props: {
       post
@@ -150,7 +151,7 @@ export async function getStaticProps({ params }) {
 
 export function getStaticPaths() {
   // Buscamos todos os slugs e date de todos os posts
-  const posts = getAllPosts(['slug', 'date']);
+  const posts = getAllPosts(['slug']);
 
 
 
