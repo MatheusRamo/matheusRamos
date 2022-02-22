@@ -26,7 +26,7 @@ export default function Header() {
             </p>
 
             <p className="text-xl dark:text-white text-center block mt-4 lg:inline-block lg:mt-0 text-teal-lighter mr-4">
-              <Link href="/">
+              <Link href="/contact">
                 <a>Contact</a>
               </Link>
             </p>

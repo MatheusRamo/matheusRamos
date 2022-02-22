@@ -5,6 +5,7 @@ import Layout, { GradientBackground } from '../components/Layout'
 import ArrowIcon from '../components/ArrowIcon'
 import SEO from '../components/SEO'
 import { getAllPosts } from '../services/api.js'
+import Footer from '../components/Footer.js'
 
 const Index = ({ posts }) => {
     return (
@@ -31,6 +32,7 @@ const Index = ({ posts }) => {
                         }
                     </ul>
                 </main>
+                <Footer/>
                 <GradientBackground
                     variant="large"
                     className="fixed top-20 opacity-40 dark:opacity-60"

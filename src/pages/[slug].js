@@ -10,6 +10,7 @@ import ArrowIcon from '../components/ArrowIcon'
 import { useEffect } from 'react'
 import 'katex/dist/katex.min.css'
 import renderMathInElement from 'katex/dist/contrib/auto-render.min.js'
+import Footer from '../components/Footer.js';
 
 
 
@@ -73,6 +74,7 @@ export default function Page({ post }) {
           </Link>
         )}
       </div>
+      <Footer/>
       <GradientBackground
         variant="large"
         className="absolute -top-32 opacity-30 dark:opacity-50"

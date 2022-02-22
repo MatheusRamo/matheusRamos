@@ -1,37 +1,29 @@
-import Image from "next/image"
 import Link from "next/link"
 import Header from "../components/Header"
 import Layout, { GradientBackground } from "../components/Layout"
 import SEO from "../components/SEO"
 import { FaEnvelope, FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa'
 
-export default function About() {
+export default function Contact() {
     return (
         <>
             <Layout>
-                <SEO title="About - Matheus Ramos" description="about Matheus Ramos" />
+                <SEO title="Contact - Matheus Ramos" description="contact Matheus Ramos" />
                 <Header />
 
                 <div className="flex flex-col items-center">
-                    <h1 className="text-3xl font-extrabold text-gray-900 dark:text-gray-100 pb-8">
-                        About me
+                    <h1 className="text-3xl font-extrabold text-gray-900 dark:text-gray-100 pb-1">
+                        Contact
                     </h1>
-                    <div className="w-48 h-48 rounded-full">
-                        <Image className="w-48 h-48 rounded-full" src="/myphoto.jpg" width={400} height={400} />
-                    </div>
-                    <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
-                        Matheus Ramos
-                    </h3>
+                    <p className="pt-1 pb-2 text-2xl font-bold leading-8 tracking-tight">
+                        How to reach me online
+                    </p>
 
-                    <div className="p-0">
-                        Geophysics
-                    </div>
-
-                    <div className="pb-2">
-                        Federal University of Western Pará
-                    </div>
-
+                    <p className="dark:text-white text-center">
+                    These are the best ways to reach me online:
+                    </p>
                     <div className="flex flex-row items-center justify-between pb-8">
+                        
                         <p className="p-2">
                             <Link href="mailto:geof.matheus@gmail.com">
                                 <a> <FaEnvelope /> </a>
@@ -43,20 +35,11 @@ export default function About() {
                             </Link>
                         </p>
                         <p className="p-2">
-                            <Link href="https://github.com/MatheusRamo">
-                                <a target="_blank"> <FaGithub /> </a>
-                            </Link>
-                        </p>
-                        <p className="p-2">
                             <Link href="https://twitter.com/GeofMatheus">
                                 <a target="_blank"> <FaTwitter /> </a>
                             </Link>
                         </p>
                     </div>
-
-                    <p >
-                        I am a Brazilian geophysics student.
-                    </p>
                 </div>
                 <GradientBackground
                     variant="large"
@@ -66,7 +49,6 @@ export default function About() {
                     variant="small"
                     className="absolute bottom-0 opacity-20 dark:opacity-10"
                 />
-
             </Layout>
         </>
     )
