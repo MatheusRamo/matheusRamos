@@ -1,6 +1,6 @@
-import { useEffect } from 'react'
-import renderMathInElement from 'katex/dist/contrib/auto-render.min.js'
 import 'katex/dist/katex.min.css'
+import renderMathInElement from 'katex/dist/contrib/auto-render.min.js'
+import { useEffect } from 'react'
 
 import '../styles/global.css'
 import 'prismjs/themes/prism-tomorrow.css'
