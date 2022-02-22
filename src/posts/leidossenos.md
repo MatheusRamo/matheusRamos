@@ -13,7 +13,7 @@ $$ ABC,BCD,BAD$$
 <div>
     <p align="center" style="font-weight:bold;font-size:16px">Figura 1  </p>
     <p align="center"  > 
-        <img   src="radiano.svg" alt="Imagem"/>
+        <img style="border-radius:10px"  src="radiano.svg" alt="Imagem"/>
     </p>
     <p align="center" style="font-size:16px">Fonte: O autor</p>
 </div>
