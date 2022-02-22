@@ -6,7 +6,7 @@ date: 'March 22, 2022'
 ---
 
 
-##### Demonstração
+
 
 Considerando a figura 1, podemos observar 3 triângulos:
 $$ ABC,BCD,BAD$$

@@ -34,7 +34,7 @@ export default function Page({ post }) {
       <article className="px-6 md:px-2 sm:px-2">
         <div>
         <p className="text-center text-gray-600 dark:text-gray-400 text-base mb-2  pb-2"> {post.date}</p>
-          <h1 className="text-3xl border-b pb-4 md:text-5xl text-center mb-4">
+          <h1 className="text-3xl border-b pb-4 md:text-5xl text-center mb-12">
             {post.title}
           </h1>
           
