@@ -33,6 +33,10 @@ export default function Footer() {
                 <div>Matheus Ramos</div>
                 <div>{` • `}</div>
                 <div>{`© ${new Date().getFullYear()}`}</div>
+                <div>{` • `}</div>
+                <Link href="/">
+                    <a>Matheus Ramos</a>
+                </Link>
             </div>
 
             </div>
