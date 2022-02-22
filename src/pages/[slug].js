@@ -1,7 +1,6 @@
 import { getPost, getAllPosts } from '../services/api.js'
 import RenderMarkdown from '../components/RenderMarkdown'
 
-import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Layout, { GradientBackground } from '../components/Layout';
 import SEO from '../components/SEO';
@@ -74,8 +73,6 @@ export default function Page({ post }) {
           </Link>
         )}
       </div>
-
-      <Footer copyrightText="Matheus Ramos" />
       <GradientBackground
         variant="large"
         className="absolute -top-32 opacity-30 dark:opacity-50"

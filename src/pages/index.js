@@ -1,10 +1,9 @@
 
 import Link from 'next/link'
-import Footer from '../components/Footer.js'
 import Header from '../components/Header.js'
-import Layout, { GradientBackground } from '../components/Layout';
-import ArrowIcon from '../components/ArrowIcon';
-import SEO from '../components/SEO';
+import Layout, { GradientBackground } from '../components/Layout'
+import ArrowIcon from '../components/ArrowIcon'
+import SEO from '../components/SEO'
 import { getAllPosts } from '../services/api.js'
 
 const Index = ({ posts }) => {
@@ -12,7 +11,7 @@ const Index = ({ posts }) => {
         <>
             <Layout>
                 <SEO title="Matheus Ramos" description="Blog sobre os mais diferentes assuntos" />
-                <Header name="Matheus Ramos" />
+                <Header/>
                 <main className="w-full">
                     <h1 className="text-3xl lg:text-5xl text-center mb-12">
                         Geophysics
@@ -35,7 +34,6 @@ const Index = ({ posts }) => {
                         }
                     </ul>
                 </main>
-                <Footer copyrightText="Matheus Ramos" />
                 <GradientBackground
                     variant="large"
                     className="fixed top-20 opacity-40 dark:opacity-60"

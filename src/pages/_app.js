@@ -17,7 +17,7 @@ const App = ({ Component, pageProps }) => {
         {left: "\\(", right: "\\)", display: false}
     ]
     });
-  }, [Component]);
+  }, [Component])
 
   return (
     <>
