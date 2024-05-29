@@ -29,6 +29,9 @@ export default function About() {
                         <div>Geophysics</div>
                         <div>{` • `}</div>
                         <div>Programming</div>
+                        <div>{` • `}</div>
+                        <div>Geoprocessing</div>
+                        
                     </div>
 
 
