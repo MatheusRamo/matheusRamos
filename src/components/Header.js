@@ -26,9 +26,9 @@ export default function Header() {
               </Link>
             </p>
 
-            <p className="flex mb-2 space-x-2 text-sm text-gray-500 dark:text-gray-400 mt-4 lg:inline-block lg:mt-0 text-teal-lighter mr-4">
-              <Link href="/contact">
-                <a><FaGithub /> Contact</a>
+            <p className="text-xl uppercase mb-3 font-bold opacity-80 dark:text-white text-center block mt-4 lg:inline-block lg:mt-0 text-teal-lighter mr-4">
+              <Link href="/contact" className="flex mb-2 space-x-2 text-sm text-gray-500 dark:text-gray-400">
+                <a><FaGithub />Contact</a>
               </Link>
             </p>
 
