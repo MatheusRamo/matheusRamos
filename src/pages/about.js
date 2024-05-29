@@ -17,7 +17,7 @@ export default function About() {
                         About me
                     </h1>
                     <div className="w-48 h-48 rounded-full">
-                        <Image className="w-48 h-48 rounded-full"  src="/myphoto" width={400} height={400} />
+                        <Image className="w-48 h-48 rounded-full"  src="/myphoto.jpg" width={400} height={400} />
                     </div>
                     <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
                         Matheus Ramos
