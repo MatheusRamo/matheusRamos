@@ -17,7 +17,7 @@ export default function About() {
                         About me
                     </h1>
                     <div className="w-48 h-48 rounded-full">
-                        <Image className="w-48 h-48 rounded-full"  src="https://www.google.com.br/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png" width={400} height={400} />
+                        <Image className="w-48 h-48 rounded-full"  src="/myphoto" width={400} height={400} />
                     </div>
                     <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
                         Matheus Ramos
