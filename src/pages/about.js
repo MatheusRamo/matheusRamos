@@ -24,11 +24,11 @@ export default function About() {
                     </h3>
 
                     <div className="p-0">
-                        Geophysics
+                    Engineering <div>{` • `}</div> Geophysics <div>{` • `}</div> programming
                     </div>
 
                     <div className="pb-2">
-                        Federal University of Western Pará
+                        
                     </div>
 
                     <div className="flex flex-row items-center justify-between pb-8">
@@ -55,7 +55,7 @@ export default function About() {
                     </div>
 
                     <p >
-                        I am a Brazilian geophysics student.
+                        I am a Brazilian engineer passionate about geophysics and a programmer in my spare times.
                     </p>
                 </div>
                 <GradientBackground
