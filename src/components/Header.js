@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import SwitchTheme from './SwitchTheme'
+import { FaEnvelope, FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa'
 
 export default function Header() {
   return (
