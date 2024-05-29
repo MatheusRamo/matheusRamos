@@ -23,7 +23,7 @@ export default function About() {
                         Matheus Ramos
                     </h3>
 
-                    <div className="flex mb-2 space-x-2 text-sm text-gray-500 dark:text-gray-400">
+                    <div className="flex mb-2 space-x-2 text-sm text-center text-gray-500 dark:text-gray-400">
                         <div>Engineering</div>
                         <div>{` • `}</div>
                         <div>Geophysics</div>
