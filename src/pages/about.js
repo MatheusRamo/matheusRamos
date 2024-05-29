@@ -30,10 +30,7 @@ export default function About() {
                         <div>{` • `}</div>
                         <div>Programming</div>
                         <div>{` • `}</div>
-                        <div>Geoprocessing</div>
-                        <div>{` • `}</div>
-                        <div>Topography</div>
-                        
+                        <div>Geoprocessing</div>      
                     </div>
 
 
