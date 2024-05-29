@@ -55,7 +55,7 @@ export default function About() {
                         </p>
                     </div>
 
-                    <p >
+                    <p className="dark:text-white text-center">
                         I am a Brazilian engineer passionate about geophysics and a programmer in my spare times.
                     </p>
                 </div>
