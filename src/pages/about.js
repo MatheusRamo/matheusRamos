@@ -56,7 +56,7 @@ export default function About() {
                     </div>
 
                     <p className="dark:text-white text-center p-2">
-                        I am a Brazilian engineer passionate about geophysics and a programmer in my spare times.
+                        I am a Brazilian engineer passionate about geophysics and a programmer in my spare time.
                     </p>
                 </div>
                 <GradientBackground
