@@ -23,13 +23,14 @@ export default function About() {
                         Matheus Ramos
                     </h3>
 
-                    <div className="p-0">
-                    Engineering <div>{` • `}</div> Geophysics <div>{` • `}</div> programming
+                    <div className="flex mb-2 space-x-2 text-sm text-gray-500 dark:text-gray-400">
+                        <div>Engineering</div>
+                        <div>{` • `}</div>
+                        <div>Geophysics</div>
+                        <div>{` • `}</div>
+                        <div>Programming</div>
                     </div>
 
-                    <div className="pb-2">
-                        
-                    </div>
 
                     <div className="flex flex-row items-center justify-between pb-8">
                         <p className="p-2">
