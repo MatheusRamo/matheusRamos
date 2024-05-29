@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import SwitchTheme from './SwitchTheme'
-import { FaEnvelope, FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa'
 
 export default function Header() {
   return (
@@ -27,8 +26,8 @@ export default function Header() {
             </p>
 
             <p className="text-xl uppercase mb-3 font-bold opacity-80 dark:text-white text-center block mt-4 lg:inline-block lg:mt-0 text-teal-lighter mr-4">
-              <Link href="/contact" className="flex mb-2 space-x-2 text-sm text-gray-500 dark:text-gray-400">
-                <a><FaGithub className="text-xl uppercase mb-3 font-bold opacity-80 dark:text-white text-center block mt-4 lg:inline-block lg:mt-0 text-teal-lighter mr-4" />Contact</a>
+              <Link href="/contact">
+                <a>Contact</a>
               </Link>
             </p>
 
