@@ -28,8 +28,7 @@ export default function Header() {
 
             <p className="text-xl uppercase mb-3 font-bold opacity-80 dark:text-white text-center block mt-4 lg:inline-block lg:mt-0 text-teal-lighter mr-4">
               <Link href="/contact">
-              <a target="_blank"> <FaGithub /> </a>
-                <a>Contact</a>
+                <a><FaGithub /> Contact</a>
               </Link>
             </p>
 
