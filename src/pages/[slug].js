@@ -31,7 +31,7 @@ export default function Page({ post }) {
     <Layout>
       <SEO title={post.title} description={post.description} />
       <Header name="Matheus Ramos" />
-      <article className="px-6 md:px-2 sm:px-2">
+      <article className="px-6 md:px-2 sm:px-4">
         <div>
         <p className="text-center text-gray-600 dark:text-gray-400 text-base mb-2  pb-2"> {post.date}</p>
           <h1 className="text-2xl border-b pb-4 text-center mb-12">
