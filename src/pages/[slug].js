@@ -40,7 +40,7 @@ export default function Page({ post }) {
           
         </div>
         <main>
-          <article className="sm:px-2 prose dark:prose-dark">
+          <article className="sm:px-2 sm:text-center prose dark:prose-dark">
             <RenderMarkdown children={post.content} />
           </article>
         </main>
