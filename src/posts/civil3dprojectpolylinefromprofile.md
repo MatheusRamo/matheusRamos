@@ -1,6 +1,6 @@
 ---
 title: "API C# Civil3D - Projetando Polyline"
-description: "Explicação do Comando Project Polyline a Partir do Profile View"
+description: "Explicação do Comando Projetar Polyline a Partir do Profile View"
 author: Matheus Ramos
 date: 'June 30, 2024'
 ---
@@ -11,7 +11,7 @@ Com esse comando, posso desenhar uma Polyline diretamente no Profile View e,  em
 
 1. Seleciono uma Polyline existente.
 
-```csharp
+```c
 PromptEntityOptions promptPolyline = new PromptEntityOptions("\n Selecione uma polyline : ");
 promptPolyline.SetRejectMessage("\n Polyline não selecionada");
 promptPolyline.AddAllowedClass(typeof(Polyline), true);
@@ -20,7 +20,7 @@ if (entityPolyline.Status != PromptStatus.OK) return;
 ```
 
 2. Seleciono o Profile View.
-```
+```c
 PromptEntityOptions promptProfileView = new PromptEntityOptions("\n Selecione um ProfileView: ");
 promptProfileView.SetRejectMessage("\nProfileView não selecionado");
 promptProfileView.AddAllowedClass(typeof(ProfileView), true);
@@ -29,7 +29,7 @@ if (entityProfileView.Status != PromptStatus.OK) return;
 ```
 
 3. Crio um Profile vazio.
-```
+```c
                     ProfileView profileView = tx.GetObject(entityProfileView.ObjectId, OpenMode.ForWrite) as ProfileView;
                     double x = 0.0;
                     double y = 0.0;
@@ -56,7 +56,7 @@ if (entityProfileView.Status != PromptStatus.OK) return;
                     BlockTableRecord blockTableRecord = tx.GetObject(database.CurrentSpaceId, OpenMode.ForWrite) as BlockTableRecord;
 ```
 4. Extraio as informações de geometria da Polyline e adiciono-as ao Profile vazio.
-```csharp
+```c
                    //Invert the Polyline if the start coordinate is greater than the end coordinate
                    if (polyline != null && (polyline.StartPoint.X > polyline.EndPoint.X))
                    {
@@ -124,19 +124,19 @@ if (entityProfileView.Status != PromptStatus.OK) return;
                        }
 ```
 5. Crio uma Polyline 3D vazia.
-```csharp
+```c
 Polyline3d polyline3D = new Polyline3d();
 blockTableRecord.AppendEntity(polyline3D);
 ```
 
 6. Obtenho o Alinhamento associado ao Profile View para extrair as coordenadas Easting e Northing.
-```csharp
+```c
 ObjectId alignmentId = profileView.AlignmentId;
 
 Alignment alignment = tx.GetObject(alignmentId, OpenMode.ForRead, false) as Alignment;
 ```
 7. Percorro os PVI (Pontos de Interesse Vertical) do profile criado e adiciono as coordenadas e elevações dos PVI à Polyline 3D.
-```csharp
+```c
 foreach (ProfilePVI profilePVI in profile.PVIs)
 {
 
@@ -157,7 +157,7 @@ foreach (ProfilePVI profilePVI in profile.PVIs)
 }
 ```
 8. Adiciono a Polyline 3D ao Model e removo o Profile criado.
-```csharp
+```c
 // Add the 3D polyline to the model space
 tx.AddNewlyCreatedDBObject(polyline3D, true);
 
