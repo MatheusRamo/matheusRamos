@@ -20,7 +20,7 @@ if (entityPolyline.Status != PromptStatus.OK) return;
 ```
 
 2. Seleciono o Profile View.
-```csharp
+```
 PromptEntityOptions promptProfileView = new PromptEntityOptions("\n Selecione um ProfileView: ");
 promptProfileView.SetRejectMessage("\nProfileView não selecionado");
 promptProfileView.AddAllowedClass(typeof(ProfileView), true);
@@ -29,7 +29,7 @@ if (entityProfileView.Status != PromptStatus.OK) return;
 ```
 
 3. Crio um Profile vazio.
-```csharp
+```
                     ProfileView profileView = tx.GetObject(entityProfileView.ObjectId, OpenMode.ForWrite) as ProfileView;
                     double x = 0.0;
                     double y = 0.0;
