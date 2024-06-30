@@ -11,7 +11,7 @@ Com esse comando, posso desenhar uma Polyline diretamente no Profile View e,  em
 
 1. Seleciono uma Polyline existente.
 
-```c
+```js
 PromptEntityOptions promptPolyline = new PromptEntityOptions("\n Selecione uma polyline : ");
 promptPolyline.SetRejectMessage("\n Polyline não selecionada");
 promptPolyline.AddAllowedClass(typeof(Polyline), true);

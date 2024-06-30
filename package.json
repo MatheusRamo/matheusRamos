@@ -10,6 +10,7 @@
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
     "react-markdown": "^8.0.0",
+    "rehype-highlight": "^7.0.0",
     "rehype-raw": "^6.1.1"
   },
   "name": "blog-nextjs-markdown",

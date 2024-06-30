@@ -11,7 +11,7 @@ const Index = ({ posts }) => {
     return (
         <>
             <Layout>
-                <SEO title="Matheus Ramos" description="Blog sobre os mais diferentes assuntos" />
+                <SEO title="Matheus Ramos" description="Blog sobre Civil3D, Geofisica, Engenharia, Aerofotgrametria, Geoprocessamento" />
                 <Header/>
                 <main className="w-full">
                     
