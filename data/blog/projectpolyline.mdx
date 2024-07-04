@@ -79,10 +79,18 @@ BlockTableRecord blockTableRecord = tx.GetObject(database.CurrentSpaceId, OpenMo
 ```
 4. Extract the geometry information from the Polyline and add it to the empty Profile.
 ```csharp
+ObjectId polylineObjId = entityPolyline.ObjectId;
+Polyline polyline = tx.GetObject(polylineObjId, OpenMode.ForWrite, false) as Polyline;
+
+
+double intervalMajorTick = profileViewStyle.BottomAxis.MajorTickStyle.Interval;
+double gridPadding = profileViewStyle.GridStyle.GridPaddingLeft * intervalMajorTick;
+
 //Invert the Polyline if the start coordinate is greater than the end coordinate
 if (polyline != null && (polyline.StartPoint.X > polyline.EndPoint.X))
 {
     polyline.ReverseCurve();
+
 }
 
 if (polyline != null)
@@ -101,34 +109,38 @@ if (polyline != null)
         {
             case SegmentType.Line:
                 LineSegment2d lineSegment2dAt = polyline.GetLineSegment2dAt(i);
+
                 startSegment = lineSegment2dAt.StartPoint;
-                double difStartSegment_X = startSegment.X - x;
+                double difStartSegment_X = (startSegment.X - gridPadding) - x;
                 double difStartSegment_Y = (startSegment.Y - y) / profileViewStyle.GraphStyle.VerticalExaggeration + profileView.ElevationMin;
                 coodStartSeg = new Point2d(difStartSegment_X, difStartSegment_Y);
+            
 
                 endSegment = lineSegment2dAt.EndPoint;
-                double difEndSegment_X = endSegment.X - x;
+                double difEndSegment_X = (endSegment.X - gridPadding) - x;
                 double difEndSegment_Y = (endSegment.Y - y) / profileViewStyle.GraphStyle.VerticalExaggeration + profileView.ElevationMin;
                 coodEndSeg = new Point2d(difEndSegment_X, difEndSegment_Y);
 
+            
                 profile.Entities.AddFixedTangent(coodStartSeg, coodEndSeg);
                 break;
             case SegmentType.Arc:
                 CircularArc2d arcSegment2dAt = polyline.GetArcSegment2dAt(i);
 
                 startSegment = arcSegment2dAt.StartPoint;
-                double difStartSegmentArc_x = startSegment.X - x;
+                double difStartSegmentArc_x = (startSegment.X - gridPadding) - x;
                 double difStartSegmentArc_y = (startSegment.Y - y) / profileViewStyle.GraphStyle.VerticalExaggeration + profileView.ElevationMin;
                 coodStartSeg = new Point2d(difStartSegmentArc_x, difStartSegmentArc_y);
 
 
                 endSegment = arcSegment2dAt.EndPoint;
-                double difEndSegmentArc_x = endSegment.X - x;
+                double difEndSegmentArc_x = endSegment.X - gridPadding - x;
                 double difEndSegmentArc_y = (endSegment.Y - y) / profileViewStyle.GraphStyle.VerticalExaggeration + profileView.ElevationMin;
                 coodEndSeg = new Point2d(difEndSegmentArc_x, difEndSegmentArc_x);
 
+                
                 sampleSegment = arcSegment2dAt.GetSamplePoints(11)[5];
-                double difMidSegmentArc_x = sampleSegment.X - x;
+                double difMidSegmentArc_x = (sampleSegment.X - gridPadding) - x;
                 double difMidSegmentArc_y = (sampleSegment.Y - y) / profileViewStyle.GraphStyle.VerticalExaggeration + profileView.ElevationMin;
                 coodSampleSegment = new Point2d(difMidSegmentArc_x, difMidSegmentArc_y);
 
@@ -144,6 +156,7 @@ if (polyline != null)
                 break;
         }
     }
+
 }
 ```
 5. Create an empty 3D polyline.
@@ -187,6 +200,8 @@ tx.AddNewlyCreatedDBObject(polyline3D, true);
 // Remove profile
 profile.Erase();
 ```
+- Download the binary Compiled and tested with the Civil 3D 2024 version. [Here](https://github.com/MatheusRamo/Civil-3D-Profile-From-Polyline/releases/download/Civil3D/CreateProfileFromPolyline.dll)
+
 In the next posts, I will show how to compile this code and how to create an Interface on Civil 3D.
 
 
