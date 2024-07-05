@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'Matheus Ramos',
   author: 'Matheus Ramos',
   headerTitle: 'Matheus Ramos',
-  description: 'My Blog to Talk About, Programming, Civil3D, Python, Dynamo, Engineering.',
+  description: 'My Blog to Talk About, Engineering, Civil3D, BIM, Programming, Python, Dynamo.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://www.matheusramos.blog/',
