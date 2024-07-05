@@ -11,11 +11,11 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/logo.png',
   mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'geof.matheus@gmail.com',
+  email: 'matheusramos.engenharia@gmail.com',
   github: 'https://github.com/MatheusRamo',
   x: 'https://twitter.com/GeofMatheus',
   youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com/in/matheus-ramos-44730b181/',
+  linkedin: 'https://www.linkedin.com/in/engmatheusramos',
   instagram: 'https://www.instagram.com/math.ramo/',
   locale: 'en-US',
   analytics: {
